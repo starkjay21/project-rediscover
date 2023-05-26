@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background{
+  background-color: skyblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container{
+  background-color: whitesmoke;
+  height: 55%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  padding: 1%;
+  gap:1%;
+}
+
+.register-container h1{
+  color: blueviolet
+}
+
+.register-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-container input{
+  padding: 6%;
+  font-size: 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid royalblue;
+  outline: none;
+}
+.register-container input[type="file"]{
+  display: none;
+}
+
+.register-container input::placeholder{
+  color: gray;
+}
+
+.register-container button{
+  width:100px;
+  font: 20px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 15%/35%;
+  color:royalblue;
+  background-color: whitesmoke;
+  border: 1px solid royalblue;
+  cursor: pointer;
+}
+.register-container button:hover{
+  color:whitesmoke;
+  background-color: royalblue;
+  border-color: whitesmoke;
+}
+
+.register-container span{
+  color: blueviolet;
+  cursor: pointer;
+}
+
+label img{
+  height: 60px;
+  width: auto;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.home{
+  background-color: skyblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container{
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  width: 65%;
+  height: 80%;
+  display: flex;
+}
+
+.sidebar-container{
+  flex:1;
+  background-color: rgb(95, 41, 145);
+  border-right: 1px solid black;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+.navbar-container{
+  width: 100%;
+  background-color: rgba(8, 10, 86, 0.582);
+  border-radius: 10px 0 0 0;
+  padding: 1.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+.navbar-img{
+  width: 15%;
+  border-radius: 50%;
+  margin-left: 4%;
+}
+.navbar-profile{
+  color: beige;
+  margin-left: 2%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.navbar-button{
+  font: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10%/30%;
+  margin: auto;
+  color:whitesmoke;
+  background-color: royalblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.navbar-button:hover{
+  color:rgba(8, 10, 86, 0.582);
+  background-color: lightskyblue;
+}
+.search-container{
+  border-bottom: 1px solid black;
+  position: sticky;
+}
+.search-input{
+  padding: 4%;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: beige;
+}
+.search-input::placeholder{
+  color: gray;
+}
+.userChat{
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+.userChat:hover{
+  background-color:#2f2d52;
+  cursor: pointer;
+}
+.search-img{
+  width: 15%;
+  border-radius: 50%;
+}
+.search-name{
+  color: yellowgreen;
+  margin-left: 2%;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.chats-container{
+  height: 100%;
+  overflow-y: auto;
+}
+.chat-profile{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.last-text{
+  color: beige;
+  margin-left: 2%;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+.chat-container{
+  flex: 2;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 15%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f2d52;
+  border-radius: 20%;
+}

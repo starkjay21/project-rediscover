@@ -4,7 +4,7 @@ const Register = () => {
   return (
     <div className="background">
       <div className="register-container">
-        <h1>Lamma Chat</h1>
+        <h1>Lama Chat</h1>
         <h3>Register here</h3>
         <form>
           <input type="text" placeholder="username"/>
@@ -22,5 +22,4 @@ const Register = () => {
     </div>
   );
 }
-
 export default Register;
